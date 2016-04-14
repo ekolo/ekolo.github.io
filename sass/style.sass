@@ -1,0 +1,119 @@
+@import "bourbon/bourbon"
+@import "neat/neat"
+@import "neat/cards-neat"
+
+html.js .loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner
+		background-image: url("../img/preloader.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+body
+	font-family: "RobotoRegular", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialiased
+	overflow-x: hidden
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+$blues: #3bbfce
+$reds: #bd0d0d
+$greens: #0dbd4b
+
+
+h1
+	font-family: $helvetica
+	font-size: golden-ratio(24px,  1)
+
+p 
+	padding: 10px
+	border: solid 5px
+	background: $reds
+
+.navbar-brand
+	a
+
+.contra
+	position: relative
+	float: right
+	width: 260px
+	height: 100px
+	margin: 100px
+	img
+		position: relative
+		width: 160px
+
+
+#section-1
+	color: #fff
+	height: 100vh
+	padding: 70px 0 35px
+	background-image: url('../img/1q.jpg')
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center
+	a
+		color: #fff
+
+	a:hover
+		color: darken($blues, 20%)
+
+#section-2
+	@extend #section-1
+	background: $reds
+	@include border-color(#bd0d0d orange null orange)
+
+#section-3
+	@extend #section-1
+	background-image: url('../img/2q.jpg')
+
+#section-4
+	@extend #section-1
+	background: $blues
+
+#section-5
+	@extend #section-1
+	background-image: url('../img/3q.jpg')
+	@include filter(grayscale(50%))
+
+
+#section-6
+	@extend #section-1
+	background: $greens
+
+
+
+
+
+
+
+
+
+
