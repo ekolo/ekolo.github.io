@@ -7,7 +7,6 @@ html {
 
 .cards {
   display: -webkit-box;
-  display: -moz-box;
   display: box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -17,11 +16,9 @@ html {
   -moz-box-lines: multiple;
   box-lines: multiple;
   -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
-  -moz-box-pack: justify;
   box-pack: justify;
   -webkit-justify-content: space-between;
   -moz-justify-content: space-between;
@@ -32,15 +29,14 @@ html {
 
 .card {
   -webkit-flex-basis: 15em;
-  -moz-flex-basis: 15em;
   flex-basis: 15em;
   -ms-flex-preferred-size: 15em;
   -webkit-flex-grow: 1;
   -moz-flex-grow: 1;
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
   -ms-flex-positive: 1;
   -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: #f6f6f6;
   border-radius: 3px;
@@ -56,7 +52,6 @@ html {
     background-color: #F8F2B4; }
     .card .card-image img {
       -webkit-transition: all 0.2s ease-in-out;
-      -moz-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
@@ -64,7 +59,6 @@ html {
       opacity: 1; }
   .card .card-header {
     -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     background-color: #f6f6f6;
     border-bottom: 1px solid gainsboro;
@@ -180,5 +174,4 @@ p {
 
 #section-6 {
   background: #0dbd4b; }
-
 /*# sourceMappingURL=style.css.map */
