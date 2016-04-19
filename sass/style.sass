@@ -1,6 +1,5 @@
 @import "bourbon/bourbon"
 @import "neat/neat"
-@import "neat/cards-neat"
 
 html.js .loader
 	background: none repeat scroll 0 0 #ffffff
@@ -16,7 +15,7 @@ html.js .loader
 		background-image: url("../img/preloader.gif")
 		background-size: cover
 		background-repeat: no-repeat
-		background-position: center center
+		background-positsfasfasion: center center
 		background-color: #fff
 		height: 60px
 		width: 60px
@@ -27,14 +26,14 @@ html.js .loader
 		position: absolute
 
 body
-	font-family: "RobotoRegular", sans-serif
-	font-weight: normal
-	font-size: 14px
-	min-width: 320px
-	position: relative
-	line-height: 1.6
-	-webkit-font-smoothing: antialiased
-	overflow-x: hidden
+	padding: 0
+	margin: 0
+	font-family: sans-serif
+	font-size: 16px
+	font-weight: 300 
+	color: #000
+	-webkit-font-smoothing: antialised
+	-moz-osx-font-smoothing: grayscale
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
@@ -44,8 +43,8 @@ body textarea:required:valid
 	color: green
 
 $blues: #3bbfce
-$reds: #bd0d0d
-$greens: #0dbd4b
+$reds: red
+$greens: red
 
 
 h1
@@ -53,7 +52,7 @@ h1
 	font-size: golden-ratio(24px,  1)
 
 p 
-	padding: 10px
+	padding: 100px
 	border: solid 5px
 	background: $reds
 
@@ -62,8 +61,7 @@ p
 
 .contra
 	position: relative
-	float: right
-	width: 260px
+	width: 160px
 	height: 100px
 	margin: 100px
 	img
@@ -72,18 +70,42 @@ p
 
 
 #section-1
-	color: #fff
-	height: 100vh
-	padding: 70px 0 35px
-	background-image: url('../img/1q.jpg')
-	background-size: cover
-	background-repeat: no-repeat
-	background-position: center center
 	a
 		color: #fff
 
 	a:hover
 		color: darken($blues, 20%)
+
+.top_table
+	background-color: #000
+	display: table
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 1000
+	.table-row
+		display: table-row
+	.table-row .table-cell
+		display: table-cell
+		text-align: center
+		vertical-align: middle
+	.top-text
+		display: inline-block
+
+.logo
+	width: 300px
+	height: 300px
+	stroke: #fff
+
+svg * 
+	fill: none
+
+#hi-there
+	width: 100%
+
+		
 
 #section-2
 	@extend #section-1
@@ -92,7 +114,7 @@ p
 
 #section-3
 	@extend #section-1
-	background-image: url('../img/2q.jpg')
+	background-image: url('../img/1q.jpg')
 
 #section-4
 	@extend #section-1
@@ -100,7 +122,7 @@ p
 
 #section-5
 	@extend #section-1
-	background-image: url('../img/3q.jpg')
+	background-image: url('../img/2q.jpg')
 	@include filter(grayscale(50%))
 
 
