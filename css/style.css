@@ -1,121 +1,87 @@
-@charset "UTF-8";
+
+body {  
+    width: 100%;
+    height: 100%;
+}
+
 html {
-  box-sizing: border-box; }
+    width: 100%;
+    height: 100%;
+}
 
-*, *::after, *::before {
-  box-sizing: inherit; }
+@media(min-width:767px) {
+    .navbar {
+        padding: 10px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
 
-html.js .loader {
-  background: none repeat scroll 0 0 #ffffff;
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 9999; }
-  html.js .loader .loader_inner {
-    background-image: url("../img/preloader.gif");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-positsfasfasion: center center;
-    background-color: #fff;
-    height: 60px;
-    width: 60px;
-    margin-top: -30px;
-    margin-left: -30px;
-    left: 50%;
-    top: 50%;
-    position: absolute; }
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
 
-body {
-  padding: 0;
-  margin: 0;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  color: #000;
-  -webkit-font-smoothing: antialised;
-  -moz-osx-font-smoothing: grayscale; }
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-  color: red; }
-
-body input:required:valid,
-body textarea:required:valid {
-  color: green; }
-
-h1 {
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 38.832px; }
-
-p {
-  padding: 100px;
-  border: solid 5px;
-  background: red; }
-
-.contra {
-  position: relative;
-  width: 160px;
-  height: 100px;
-  margin: 100px; }
-  .contra img {
-    position: relative;
-    width: 160px; }
-
-#section-1 a, #section-2 a, #section-3 a, #section-4 a, #section-5 a, #section-6 a {
-  color: #fff; }
-#section-1 a:hover, #section-2 a:hover, #section-3 a:hover, #section-4 a:hover, #section-5 a:hover, #section-6 a:hover {
-  color: #217882; }
-
-.top_table {
-  background-color: #000;
+/* vertical and horizontal centering */
+.site-wrapper {
   display: table;
   width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1000; }
-  .top_table .table-row {
-    display: table-row; }
-  .top_table .table-row .table-cell {
-    display: table-cell;
+  height: 100%; 
+  min-height: 100%;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 320px) {
+/* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }  
+}
+
+
+.intro-section {
+    background-image: url("../img/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
     text-align: center;
-    vertical-align: middle; }
-  .top_table .top-text {
-    display: inline-block; }
+}
 
-.logo {
-  width: 300px;
-  height: 300px;
-  stroke: #fff; }
+.about-section {
+    height: 100%;
+    padding-top: 100px;
+    text-align: center;
+    background: #eee;
+}
 
-svg * {
-  fill: none; }
+.services-section {
+    height: 100%;
+    padding-top: 100px;
+    text-align: center;
+    background: #fff;
+}
 
-#hi-there {
-  width: 100%; }
+.contact-section {
+    height: 100%;
+    padding-top: 100px;
+    text-align: center;
+    background: #eee;
+}
 
-#section-2 {
-  background: red;
-  border-top-color: #bd0d0d;
-  border-right-color: orange;
-  border-left-color: orange; }
-
-#section-3 {
-  background-image: url("../img/1q.jpg"); }
-
-#section-4 {
-  background: #3bbfce; }
-
-#section-5 {
-  background-image: url("../img/2q.jpg");
-  -webkit-filter: grayscale(50%);
-  filter: grayscale(50%); }
-
-#section-6 {
-  background: red; }
-/*# sourceMappingURL=style.css.map */
+/* Scroll to top button */
+.scrolltotop {
+    position: fixed;
+    display: none;
+    bottom: 10px;
+    right: 15px;
+    font-size: 36px;
+    text-decoration: none;
+    z-index: 9999;
+}
