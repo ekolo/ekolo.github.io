@@ -1,6 +1,17 @@
+@import "stylesheets/bootstrap";
+
+$base: #333;
+
+
+$a-color: #3bbfce;
+$b-color: #64dd17;
+$c-color: #ba4950;
+
+
+
 
 html.js .loader {
-	background: none repeat scroll 0 0 #ffffff;
+	background: none repeat scroll 0 0 #fff;
 	bottom: 0;
 	height: 100%;
 	left: 0;
@@ -54,16 +65,15 @@ p {
 }
 
 @media(min-width:767px) {
-    .navbar {
-        padding: 10px 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
-
-    .top-nav-collapse {
-        padding: 0;
-    }
+  .navbar {
+  padding: 10px 0;
+  -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+  transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+  .top-nav-collapse {
+  padding: 0;
+  }
 }
 
 /* vertical and horizontal centering */
@@ -84,34 +94,34 @@ p {
 @media (min-width: 320px) {
 /* Start the vertical centering */
   .site-wrapper-inner {
-    vertical-align: middle;
+  vertical-align: middle;
   }  
 }
 
 .intro-section {
-    //background-image: url("../img/4.jpg");
-    //background-size: cover;
-    //background-repeat: no-repeat;
-    //background-position: center center;
-    height: 100%;
-    text-align: center;
+  //background-image: url("../img/4.jpg");
+  //background-size: cover;
+  //background-repeat: no-repeat;
+  //background-position: center center;
+  height: 100%;
+  text-align: center;
 }
 
 svg * {
-        fill: none;
-      }
-      #hi-there {
-        width: 100%;
-      }
+  fill: none;
+}
+#hi-there {
+  width: 100%;
+}
 
-.logo{
+.logo {
   display: inline-block;
   width: 300px;
   height: 300px;
   stroke: #fff;
 }
 
-.down{
+.down {
   position: absolute;
   right: 0; left: 0;
   top: 90%;
@@ -120,41 +130,40 @@ svg * {
   font-size: 64px;
   text-decoration: none;
   }
-  
   i:hover {
-  color: #FF4500;  
+  color: $a-color;  
   }
 }
 
 
 
 #services {
-    padding: 100px 0;
-    background: #eee;
-    text-align: center;
-    i {
-    color: #000;
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    height: 200%;
-    position: relative;
-    top: 0;
-    transition: top 0.5s;
-    -webkit-transition: top 0.5s;
-    }
-    i:hover {
-    top: -140px;
-    }
-    i:after {
-    position: absolute;
-    width: inherit;
-    height: 50%;
-    left: 0;
-    bottom: 0;
-    color: #FF4500;
-    line-height: 140px;
-    }
+  padding: 100px 0;
+  background: #eee;
+  text-align: center;
+  i {
+  color: $base;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 200%;
+  position: relative;
+  top: 0;
+  transition: top 0.5s;
+  -webkit-transition: top 0.5s;
+  }
+  i:hover {
+  top: -140px;
+  }
+  i:after {
+  position: absolute;
+  width: inherit;
+  height: 50%;
+  left: 0;
+  bottom: 0;
+  color: $a-color;
+  line-height: 140px;
+  }
 }
 
 .serv{
@@ -168,22 +177,22 @@ svg * {
 }
 
 .parallax-window {
-    min-height: 300px;
-    background: transparent;
+  min-height: 300px;
+  background: transparent;
 }
 
 .overlay {
-    font-size: 30px;
-    color: #FFF;
-    padding-top: 75px;
-    padding-bottom: 75px;
-    }
+  font-size: 30px;
+  color: #fff;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
 
 
 .work-section {
-    padding: 100px 0;
-    background: #eee;
-    text-align: center;
+  padding: 100px 0;
+  background: #eee;
+  text-align: center;
 }
 
 .work {
@@ -191,25 +200,31 @@ svg * {
 }
 
 .contact-section {
-    height: 100%;
-    padding-top: 100px;
-    background: #fff;
-    text-align: center;
+  height: 100%;
+  padding-top: 100px;
+  background: #fff;
+  text-align: center;
+}
+
+footer {
+  min-height: 50px;
+  padding: 20px;
+  background: #eee;
+  text-align: center;
 }
 
 .scrolltotop {
-    position: fixed;
-    display: none;
-    bottom: 10px;
-    right: 15px;
-    z-index: 9999;
-    i {
-  color: #000;
+  position: fixed;
+  display: none;
+  bottom: 10px;
+  right: 15px;
+  z-index: 9999;
+  i {
+  color: $base;
   font-size: 36px;
   text-decoration: none;
   }
-  
   i:hover {
-  color: #FF4500;  
+  color: $a-color;  
   }
 }
