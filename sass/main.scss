@@ -197,7 +197,47 @@ svg * {
 
 .work {
   margin: 0 -15px;
+
+  a {
+  color: #fff;
+  text-decoration: none;
+  }
+  
+  figure {
+  background: $a-color;
+  } 
+
+  figure img {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  }
+
+  figure:hover img {
+  opacity: 0.3;
+  }
+  
+  figcaption {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  padding: 25%;
+  color: #fff;
+  opacity: 0;
+  }
+
+  :hover figcaption {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  }
+  
 }
+
+
+
+
+
 
 .contact-section {
   height: 100%;

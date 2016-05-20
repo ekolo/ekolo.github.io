@@ -3267,6 +3267,30 @@ svg * {
 
 .work {
   margin: 0 -15px; }
+  .work a {
+    color: #fff;
+    text-decoration: none; }
+  .work figure {
+    background: #3bbfce; }
+  .work figure img {
+    opacity: 1;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out; }
+  .work figure:hover img {
+    opacity: 0.3; }
+  .work figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25%;
+    color: #fff;
+    opacity: 0; }
+  .work :hover figcaption {
+    opacity: 1;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out; }
 
 .contact-section {
   height: 100%;
