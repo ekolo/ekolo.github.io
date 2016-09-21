@@ -13,6 +13,7 @@ $(window).scroll(function(){
         $('.scrolltotop').fadeOut();
     }
 });
+
 // Click event to scroll to top
 $('.scrolltotop').click(function(){
     $('html, body').animate({scrollTop : 0}, 1500, 'easeInOutExpo');
@@ -32,4 +33,25 @@ $('.ajax-popup').magnificPopup({
     type: 'ajax',
     alignTop: true,
     overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+});
+
+$(document).ready(function() {
+
+    //E-mail Ajax Send
+    $("form").submit(function() { //Change
+        var th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "http://localhost/clean/mail.php", //Change
+            data: th.serialize()
+        }).done(function() {
+            alert("Thank you!");
+            setTimeout(function() {
+                // Done Functions
+                th.trigger("reset");
+            }, 1000);
+        });
+        return false;
+    });
+
 });

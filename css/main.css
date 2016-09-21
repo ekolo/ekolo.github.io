@@ -3262,35 +3262,39 @@ svg * {
 
 .work-section {
   padding: 100px 0;
-  background: #eee;
+  background: #e8e3e4;
   text-align: center; }
 
 .work {
   margin: 0 -15px; }
-  .work a {
-    color: #fff;
-    text-decoration: none; }
   .work figure {
-    background: #3bbfce; }
-  .work figure img {
-    opacity: 1;
-    -webkit-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out; }
-  .work figure:hover img {
-    opacity: 0.3; }
+    padding: 8px; }
   .work figcaption {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 25%;
-    color: #fff;
-    opacity: 0; }
+    height: auto;
+    width: auto;
+    background: rgba(232, 227, 228, 0.9);
+    opacity: 0;
+    -webkit-transition: all 0.9s cubic-bezier(0.4, 1, 0.3, 1);
+    transition: all 0.9s cubic-bezier(0.4, 1, 0.3, 1); }
   .work :hover figcaption {
-    opacity: 1;
-    -webkit-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out; }
+    opacity: 1; }
+  .work a {
+    color: #3bbfce;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 .contact-section {
   height: 100%;
