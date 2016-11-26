@@ -3214,7 +3214,7 @@ svg * {
     font-size: 64px;
     text-decoration: none; }
   .down i:hover {
-    color: #3bbfce; }
+    color: #996599; }
 
 #services {
   padding: 100px 0;
@@ -3238,7 +3238,7 @@ svg * {
     height: 50%;
     left: 0;
     bottom: 0;
-    color: #3bbfce;
+    color: #996599;
     line-height: 140px; }
 
 .serv {
@@ -3284,7 +3284,7 @@ svg * {
   .work :hover figcaption {
     opacity: 1; }
   .work a {
-    color: #3bbfce;
+    color: #996599;
     text-decoration: none;
     position: absolute;
     top: 50%;
@@ -3319,6 +3319,6 @@ footer {
     font-size: 36px;
     text-decoration: none; }
   .scrolltotop i:hover {
-    color: #3bbfce; }
+    color: #996599; }
 
 /*# sourceMappingURL=main.css.map */
